@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[status_vo](
+	[statusId] [bigint] IDENTITY(1,1) NOT NULL,
+	[status_text] [nvarchar](50) NULL,
+	[status_description] [nvarchar](250) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[statusId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
